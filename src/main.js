@@ -1,4 +1,4 @@
-import { Header } from './components/Header.js'
+import { Header } from './components/header.js'
 import { ProfileCard } from './components/ProfileCard'
 import { ExperienceCard } from './components/ExperienceCard'
 import { HobbiesCard } from './components/HobbiesCard'

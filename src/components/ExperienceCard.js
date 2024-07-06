@@ -7,7 +7,7 @@ export function ExperienceCard() {
   card.innerHTML = `
     <h2 class="card__title">Experiences</h2>
     <div class="experience">
-      <img src="./assets/images.jpg/logo tienda.jpg" alt="logo" class="experience__image">
+      <img src="/assets/images.jpg/logo tienda.jpg" alt="logo" class="experience__image">
       <div class="experience__info">
         <p class="experience__time">Enero 2000 - Current</p>
         <h3 class="experience__job">Gerente Mobiliario</h3>
@@ -15,7 +15,7 @@ export function ExperienceCard() {
       </div>
     </div>
     <div class="experience">
-      <img src="./assets/images.jpg/logopower.jpg" alt="logo" class="experience__image">
+      <img src="/assets/images.jpg/logopower.jpg" alt="logo" class="experience__image">
       <div class="experience__info">
         <p class="experience__time">Marzo 2024 - actualidad</p>
         <h3 class="experience__job">Estudiante ThePower</h3>

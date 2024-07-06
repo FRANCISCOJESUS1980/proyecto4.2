@@ -7,7 +7,7 @@ export function Header() {
   header.innerHTML = `
     <div class="switches">
       <div id="toggle-theme" class="toggle-theme">
-        <img id="toggle-icon" src="./assets/icons.svg/moon.svg" alt="icon theme" class="toggle-theme__icon" />
+        <img id="toggle-icon" src="/assets/icons.svg/moon.svg" alt="icon theme" class="toggle-theme__icon" />
         <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
       </div>
     </div>
@@ -19,7 +19,6 @@ export function Header() {
     </div>
   `
 
-  // Event listeners for theme toggle
   const toggleTheme = header.querySelector('#toggle-theme')
   const toggleIcon = header.querySelector('#toggle-icon')
   const toggleText = header.querySelector('#toggle-text')
@@ -27,15 +26,14 @@ export function Header() {
   toggleTheme.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme')
     if (document.body.classList.contains('dark-theme')) {
-      toggleIcon.src = './assets/icons.svg/soleado.png'
+      toggleIcon.src = '/assets/icons.svg/soleado.png'
       toggleText.textContent = 'Light Mode'
     } else {
-      toggleIcon.src = './assets/icons.svg/moon.svg'
+      toggleIcon.src = '/assets/icons.svg/moon.svg'
       toggleText.textContent = 'Dark Mode'
     }
   })
 
-  // Event listeners for color change
   const colorItems = header.querySelectorAll('.colors__item')
   colorItems.forEach((item) => {
     item.addEventListener('click', (e) => {

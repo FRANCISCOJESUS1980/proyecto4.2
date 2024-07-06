@@ -6,7 +6,7 @@ export function ProfileCard() {
 
   card.innerHTML = `
     <div class="card__image-container">
-      <img src="./assets/images.jpg/perfil.jpg" alt="perfil" />
+      <img src="/assets/images.jpg/perfil.jpg" alt="perfil" />
     </div>
     <div class="card__header">
       <h2 class="card__title no-margin">FranciscoDesings</h2>
