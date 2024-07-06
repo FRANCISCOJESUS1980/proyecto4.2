@@ -5,7 +5,7 @@ export function ExperienceCard() {
   card.className = 'card card--experience'
 
   card.innerHTML = `
-    <h2 class="card__title">Experiencies</h2>
+    <h2 class="card__title">Experiences</h2>
     <div class="experience">
       <img src="./assets/images.jpg/logo tienda.jpg" alt="logo" class="experience__image">
       <div class="experience__info">

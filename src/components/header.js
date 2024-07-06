@@ -19,5 +19,32 @@ export function Header() {
     </div>
   `
 
+  // Event listeners for theme toggle
+  const toggleTheme = header.querySelector('#toggle-theme')
+  const toggleIcon = header.querySelector('#toggle-icon')
+  const toggleText = header.querySelector('#toggle-text')
+
+  toggleTheme.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
+    if (document.body.classList.contains('dark-theme')) {
+      toggleIcon.src = './assets/icons.svg/soleado.png'
+      toggleText.textContent = 'Light Mode'
+    } else {
+      toggleIcon.src = './assets/icons.svg/moon.svg'
+      toggleText.textContent = 'Dark Mode'
+    }
+  })
+
+  // Event listeners for color change
+  const colorItems = header.querySelectorAll('.colors__item')
+  colorItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      document.documentElement.style.setProperty(
+        '--primary-color',
+        e.target.dataset.color
+      )
+    })
+  })
+
   return header
 }

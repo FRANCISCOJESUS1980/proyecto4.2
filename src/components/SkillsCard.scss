@@ -1,0 +1,14 @@
+.skills {
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    background-color: var(--bg-card-color);
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+  }
+}
